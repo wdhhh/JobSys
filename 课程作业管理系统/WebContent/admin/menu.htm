@@ -1,0 +1,110 @@
+
+
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><TITLE>标题</TITLE>
+
+<LINK href="css/default.css" type="text/css" rel="stylesheet">
+<STYLE type="text/css">.ttl {
+	CURSOR: hand; COLOR: #ffffff; PADDING-TOP: 4px
+}
+</STYLE>
+<SCRIPT language="javascript" src="js/common.js"></SCRIPT>
+<SCRIPT language="javascript">
+function showHide(obj) {
+  var oStyle;
+	if (!isIE())
+		oStyle = obj.parentNode.parentNode.parentNode.rows[1].style;
+	else
+		oStyle = obj.parentElement.parentElement.parentElement.rows[1].style;
+    oStyle.display == "none" ? oStyle.display = "" : oStyle.display = "none";
+}
+</SCRIPT>
+<META content="MSHTML 6.00.3790.259" name="GENERATOR"></HEAD><BODY bgcolor="#9aadcd" leftmargin="0" topmargin="0">
+
+<BR>
+<TABLE cellspacing="0" cellpadding="0" width="159" align="center" border="0">
+  <TBODY>
+    <TR>
+      <TD width="23"><IMG height="25" src="image/box_topleft.gif" width="23"></TD>
+      <TD class="ttl" onClick="showHide(this)" width="129" background="image/box_topbg.gif">用户管理</TD>
+      <TD width="7"><IMG height="25" src="image/box_topright.gif" width="7"></TD>
+    </TR>
+    <TR style="">
+      <TD style="PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px" background="box_bg.gif" colspan="3"><TABLE width="100&percnt;">
+        <TBODY>
+          <TR>
+            <TD><IMG height="7" hspace="5" src="image/arrow.gif" width="5" align="absMiddle"> <A href="userList.jsp" target="mainFrame">学生列表</A></TD>
+          </TR>
+          <TR>
+            <TD><IMG height="7" hspace="5" src="image/arrow.gif" width="5" align="absMiddle"> <A href="teacherList.jsp" target="mainFrame">老师列表</A></TD>
+          </TR>
+          <TR>
+            <TD><IMG height="7" hspace="5" src="image/arrow.gif" width="5" align="absMiddle"> <A href="addTeacher.jsp" target="mainFrame">增加老师</A></TD>
+          </TR>
+          <TR>
+            <TD><IMG height="7" hspace="5" src="image/arrow.gif" width="5" align="absMiddle"> <A target="mainFrame" href="findTeacher.jsp">查询老师</A></TD>
+          </TR>
+        </TBODY>
+      </TABLE></TD>
+    </TR>
+    
+    
+    <TR>
+      <TD colspan="3"><IMG height="10" src="image/box_bottom.gif" width="159"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE cellspacing="0" cellpadding="0" width="159" align="center" border="0">
+  <TBODY>
+    <TR>
+      <TD width="23"><IMG height="25" src="image/box_topleft.gif" width="23"></TD>
+      <TD class="ttl" onClick="showHide(this)" width="129" background="image/box_topbg.gif">班级管理</TD>
+      <TD width="7"><IMG height="25" src="image/box_topright.gif" width="7"></TD>
+    </TR>
+    <TR style="DISPLAY: none">
+      <TD style="PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px" background="box_bg.gif" colspan="3"><TABLE width="100&percnt;">
+        <TBODY>
+          <TR>
+            <TD><IMG height="7" hspace="5" src="image/arrow.gif" width="5" align="absMiddle"> <A href="addClass.jsp" target="mainFrame">增加班级</A></TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+        <TABLE width="100&percnt;">
+          <TBODY>
+            <TR>
+              <TD><IMG height="7" hspace="5" src="image/arrow.gif" width="5" align="absMiddle"> <A href="delClass.jsp" target="mainFrame">删除班级</A></TD>
+            </TR>
+          </TBODY>
+        </TABLE>
+      <p>&nbsp;</p></TD>
+    </TR>
+    
+    
+    <TR>
+      <TD colspan="3"><IMG height="10" src="image/box_bottom.gif" width="159"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<TABLE cellspacing="0" cellpadding="0" width="159" align="center" border="0">
+  <TBODY>
+    <TR>
+      <TD width="23"><IMG height="25" src="image/box_topleft.gif" width="23"></TD>
+      <TD class="ttl" onClick="showHide(this)" width="129" background="image/box_topbg.gif">用户自服务</TD>
+      <TD width="7"><IMG height="25" src="image/box_topright.gif" width="7"></TD>
+    </TR>
+    <TR style="DISPLAY: none"> 
+      <TD style="PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px" background="box_bg.gif" colspan="3"><TABLE width="100&percnt;">
+        <TBODY>
+          <TR>
+            <TD><IMG height="7" hspace="5" src="image/arrow.gif" width="5" align="absMiddle"><a href="user_fix.jsp?id=admin" target="mainFrame"> 修改密码</a></TD>
+          </TR>
+        </TBODY>
+      </TABLE></TD>
+    </TR>
+    
+    
+    <TR>
+      <TD colspan="3"><IMG height="10" src="image/box_bottom.gif" width="159"></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BODY></HTML>
